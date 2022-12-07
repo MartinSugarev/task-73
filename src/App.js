@@ -6,6 +6,7 @@ function App() {
 const [count, setCount] = useState(1)
 
 useEffect(() => {
+  document.title = `Count (${count})`
   console.log('button is clicked')
 }, [count])
 
